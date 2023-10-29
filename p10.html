@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-5</title>
+</head>
+<body>
+    <center>
+        <h1>this is canvas tag</h1>
+        <p>the html canvas element provides html a bitmaps surface to work with.it is used to draw graphics on the web page.
+            the<b>html 5 canvas tag</b>is used to draw graphics using scripting language like javascript </p>
+    </center>
+    <hr>
+
+    <canvas>this is first canvas tag</canvas>
+    <canvas id="mycanvas2" width="300px" height="100px" style="border:2px solid blue;"></canvas>
+    <p><b>it is always necessary to specify the id attribute and the height  and width attribute to define the size of the canvas.you can have multiple canvas tags in html</b></p>
+
+    <hr>
+
+    <center>
+        <h3>drawing a rectangle in canvas</h3>
+    </center>
+
+ <canvas id="canvasRect" width="250" height="150" style="border:2px solid rgb(92, 18, 176);"></canvas>
+ <script>
+    let canvasRect = document.getElementById("canvasRect").getContext("2d");
+    canvasRect.fillStyle="yellow";
+    canvasRect.fillRect(25,25,200,100);
+</script>
+
+    <hr>
+
+    <center>
+        <h3>drawing a cirlce</h3>
+    </center>
+        <canvas id="mycanvascircle" width="200" height="200" style="border:1px solid orangered"></canvas>
+        <script>
+            let mycanvascircle = document.getElementById("mycanvascircle").getContext("2d");
+            mycanvascircle.fillStyle ="BLUE";  
+            mycanvascircle.arc(100,100,95,0,2*Math.PI);
+            mycanvascircle.fill()
+        
+         </script>
+
+ <center>
+        <h3>drawing a text on canvas</h3>
+    </center>
+        <canvas id="canvasText" width="500" height="200" style="border:1px solid orangered"></canvas>
+        <script>
+            let canvasText = document.getElementById("canvasText").getContext("2d");
+            canvasText.font ="20pt Times New Roman";
+            canvasText.fillStyle="blue";
+            canvasText.fillText('welcome shayan',150, 100);
+        
+         </script>
+    </body>
+ 
+</body>
+</html>
